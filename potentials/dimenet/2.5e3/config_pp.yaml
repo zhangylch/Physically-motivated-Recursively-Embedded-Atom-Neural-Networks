@@ -1,0 +1,40 @@
+model_name: "dimenet++"
+
+emb_size: 128
+out_emb_size: 256
+int_emb_size: 64
+basis_emb_size: 8
+num_blocks: 4
+
+num_spherical: 7
+num_radial: 6
+output_init: 'GlorotOrthogonal'  # 'zeros' for mu, homo, lumo, and zpve; 'GlorotOrthogonal' for alpha, R2, U0, U, H, G, and Cv
+
+extensive: True
+cutoff: 6.5
+envelope_exponent: 5
+
+num_before_skip: 1
+num_after_skip: 2
+num_dense_output: 5
+
+num_train: 2000
+num_valid: 500
+data_seed: 42
+dataset: "/data/home/scv2201/run/dimenet-master/data/methane/data_3e6/2k5/data.npz"
+logdir: "."
+
+num_steps: 300000
+ema_decay: 0.999
+
+learning_rate: 0.001
+warmup_steps: 3000
+decay_rate: 0.01
+decay_steps: 4000000
+
+batch_size: 32
+evaluation_interval: 1000
+save_interval: 100
+restart: None
+comment: "final"
+targets: ['energy']  # ['mu', 'alpha', 'homo', 'lumo', 'gap', 'r2', 'zpve', 'U0', 'U', 'H', 'G', 'Cv']
