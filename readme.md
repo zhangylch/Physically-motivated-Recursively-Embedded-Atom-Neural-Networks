@@ -2,7 +2,7 @@ Recursively embedded atom neural network
 =================================================
 **1. Introduction:**
 ___________________________
-Recursive Embedded Atomic Neural Network (REANN) is a physically-inspired neural network framework, in which the orbital coefficients in the original EANN are transmitted iteratively and are considered to depend on the local environment. REANN can formulate a complete description of atomic structure without explicitly calculating high-order correlations, and effectively incorporate non-local effects, validated by numerical results in a various system. This repo preserves the nn potential of this numerical result in this work (Reference 3) with the form of serializable models. The full package used for training will be released soon.
+Recursive Embedded Atomic Neural Network (REANN) is a physically-inspired neural network framework, in which the orbital coefficients in the original EANN are transmitted iteratively and are considered to depend on the local environment. REANN can formulate a complete description of atomic structure without explicitly calculating high-order correlations, and effectively incorporate non-local effects, validated by numerical results in a various system. This repo preserves the nn potential of this numerical result in this work (Reference 3) with the form of serializable models. The full package has been released at <REANN>(from https://github.com/zhangylch/REANN).
 
 **2. Employ the model**
 ___________________________________________________
